@@ -56,7 +56,7 @@ function draw() {
     text(userInfo[i], width/2, height*0.7);
   }
   //Volume
-  vol = mic.getLevel() * 100;
+  vol = mic.getLevel() * 150;
   // console.log(vol);
   fill(255);
   //Show showInfo()
@@ -67,13 +67,6 @@ function draw() {
     textSize(12);
     text("...data collected...", width/2, height*0.6);
   }
-
-  // if (popup == true) {
-  //   doPopup();
-  // } else {
-  //   popup = false;
-  //   doPopup().hide;
-  // }
 }
 //Hide Button & Input Field----------------------------------------------------
 function showInfo() {
@@ -83,7 +76,10 @@ function showInfo() {
 //show 1s & 0s-----------------------------------------------------------------
 function showMatrix() {
   stroke(255);
-  fill(255);
+  fill(0, 255, 0);
+  textSize(12);
+  text("1", random(0, width), random(0, height));
+  text("0", random(0, width), random(0, height));
   text("1", random(0, width), random(0, height));
   text("0", random(0, width), random(0, height));
 }
@@ -91,6 +87,13 @@ function showMatrix() {
 function moreInfo() {
   stroke(255, 0, 0);
   fill(255, 0, 0);
+  textSize(12);
+  text("1", random(0, width), random(0, height));
+  text("0", random(0, width), random(0, height));
+  text("1", random(0, width), random(0, height));
+  text("0", random(0, width), random(0, height));
+  text("1", random(0, width), random(0, height));
+  text("0", random(0, width), random(0, height));
   text("1", random(0, width), random(0, height));
   text("0", random(0, width), random(0, height));
 }
